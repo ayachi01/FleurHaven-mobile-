@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FleurHaven</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Cart</string>
+    <string name="search">Search</string>
+    <string name="flower1">Flower</string>
+    <string name="tvcart">Shopping Cart</string>
+    <string name="tvproduct">Products</string>
+    <string name="tvtotal">Total:</string>
+    <string name="check_out">Check Out</string>
+</resources>

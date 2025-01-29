@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TOP NAVIGATION BAR -->
+    <LinearLayout
+        android:id="@+id/top_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#FFFCF8"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp">
+
+            <!-- EditText for Search Bar -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/search_bar_layout"
+                android:gravity="center_vertical"
+                android:hint="Search"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentleft="true"
+            android:layout_marginleft="23dp"
+            android:src="@drawable/search_icon" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_navigation_bar">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_banner"
+            android:layout_width="374dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="#FFEFF0"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/card_fleurhaven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fleur Haven"
+                    android:fontFamily="@font/kaisei_harunoumi_bold"
+                    android:textSize="40sp"
+                    android:textColor="#573F53"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <!-- FLOWER CARDS -->
+    <GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:rowCount="10"
+        android:columnCount="2">
+        <!-- CardView 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="18dp"
+            app:cardBackgroundColor="#FDE9EC"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal">
+            <ImageView
+                android:id="@+id/flower1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- CardView 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="18dp"
+            app:cardBackgroundColor="#FDE9EC"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal">
+            <ImageView
+                android:id="@+id/flower2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- CardView 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="18dp"
+            app:cardBackgroundColor="#FDE9EC"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal">
+            <ImageView
+                android:id="@+id/flower3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- CardView 4 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="18dp"
+            app:cardBackgroundColor="#FDE9EC"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal">
+            <ImageView
+                android:id="@+id/flower4"
+                android:layout_width="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/flower_sample"/>
+        </LinearLayout>
+    </GridLayout>
+
+
+    <!-- BOTTOM NAVIGATION BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FBF2F2"
+        android:elevation="10dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/shopping_cart" />
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@drawable/person_icon" />
+
+    </LinearLayout>
+
+</RelativeLayout>
