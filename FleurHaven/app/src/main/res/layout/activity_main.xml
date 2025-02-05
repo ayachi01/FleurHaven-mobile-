@@ -615,7 +615,7 @@
         android:layout_alignParentBottom="true"
         android:background="#FBF2F2"
         android:elevation="10dp"
-        android:gravity="right"
+        android:gravity="center"
         android:orientation="horizontal"
         android:paddingStart="20dp"
         android:paddingTop="5dp"
@@ -627,7 +627,7 @@
             android:id="@+id/cart_icon"
             android:layout_width="40dp"
             android:layout_height="50dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="150dp"
             app:srcCompat="@drawable/shopping_cart" />
 
         <ImageView
