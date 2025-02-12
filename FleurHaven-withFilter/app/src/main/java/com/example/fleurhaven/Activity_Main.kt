@@ -7,17 +7,21 @@ import androidx.appcompat.app.AppCompatActivity
 
 class Activity_Main : AppCompatActivity() {
 
-    private lateinit var cart_icon: ImageButton
-    private lateinit var profile_icon: ImageButton
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        this.cart_icon = findViewById(R.id.cart_icon)
-        cart_icon.setOnClickListener {
-            val intent2 = Intent(this, Activity_Cart::class.java)
-            startActivity(intent2)
+        val cartIcon = findViewById<ImageButton>(R.id.cart_icon)
+        val profileIcon = findViewById<ImageButton>(R.id.profile_icon)
+
+        cartIcon.setOnClickListener {
+            val intent = Intent(this, Activity_Cart::class.java)
+            startActivity(intent)
+        }
+
+        profileIcon.setOnClickListener {
+            val intent = Intent(this, Activity_Login::class.java)
+            startActivity(intent)
         }
 
 
