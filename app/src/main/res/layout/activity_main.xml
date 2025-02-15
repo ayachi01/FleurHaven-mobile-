@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Main">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="64dp">
+
+            <!-- BANNER CARD (TOP) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_weight="100"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                >
+                <!-- Banner Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/banner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="50"
+                    app:cardCornerRadius="7dp"
+                    android:backgroundTint="#FDE9EC">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kaisei_harunoumi_bold"
+                                android:gravity="center"
+                                android:text="@string/fleurhaven"
+                                android:textColor="#573F53"
+                                android:textSize="40sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kaisei_harunoumi_bold"
+                                android:gravity="center"
+                                android:text="@string/bannerline"
+                                android:textColor="#573F53"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- RECOMMENDED & FILTER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+                <TextView
+                    android:id="@+id/recommended"
+                    android:layout_width="140dp"
+                    android:layout_height="27dp"
+                    android:text="@string/recommended"
+                    android:fontFamily="@font/albertsans"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+                <ImageView
+                    android:id="@+id/filter"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/filter_icon"
+                    android:layout_marginLeft="200dp"
+                    />
+        </LinearLayout>
+
+
+            <!-- ROW 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:layout_weight="100"
+                android:padding="8dp">
+                <!-- CARD 1 = ROW 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flower1"
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="50"
+                    app:cardCornerRadius="7dp">
+                    <RelativeLayout
+                        android:layout_width="185dp"
+                        android:layout_height="250dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="181dp"
+                            android:src="@drawable/rainbow_posies" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#FDE9EC"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/junge"
+                                android:text="Rainbow Posies"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="10dp"/>
+                            <Button
+                                android:id="@+id/button1"
+                                android:layout_width="110dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/junge"
+                                android:text="@string/addtocart"
+                                android:background="@drawable/add_to_cart_button" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- CARD 2 = ROW 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flower2"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="50"
+                    app:cardCornerRadius="7dp">
+                    <RelativeLayout
+                        android:layout_width="185dp"
+                        android:layout_height="250dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:src="@drawable/daisykiss" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#FDE9EC"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/junge"
+                                android:text="Daisy Kiss"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="10dp"/>
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="110dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/junge"
+                                android:text="@string/addtocart"
+                                android:background="@drawable/add_to_cart_button" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+            <!-- ROW 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:padding="8dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flower3"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="50"
+                    app:cardCornerRadius="7dp">
+                    <RelativeLayout
+                        android:layout_width="185dp"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/flower_sample" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#FDE9EC"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/junge"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="Flower 1"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="10dp"/>
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="110dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/junge"
+                                android:text="@string/addtocart"
+                                android:background="@drawable/add_to_cart_button" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flower4"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="50"
+                    app:cardCornerRadius="7dp">
+                    <RelativeLayout
+                        android:layout_width="185dp"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/flower_sample" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#FDE9EC"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/junge"
+                                android:text="Flower 1"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="10dp"/>
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="110dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/junge"
+                                android:text="@string/addtocart"
+                                android:background="@drawable/add_to_cart_button" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- ROW 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:padding="8dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flower5"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="50"
+                    app:cardCornerRadius="7dp">
+                    <RelativeLayout
+                        android:layout_width="185dp"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/blush_bouquet" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#FDE9EC"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/junge"
+                                android:text="Blush Bouquet"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="10dp"/>
+                            <Button
+                                android:id="@+id/button5"
+                                android:layout_width="110dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/junge"
+                                android:text="@string/addtocart"
+                                android:background="@drawable/add_to_cart_button" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flower6"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="50"
+                    app:cardCornerRadius="7dp">
+                    <RelativeLayout
+                        android:layout_width="185dp"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/dangwa" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#FDE9EC"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/junge"
+                                android:text="Dangwa"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="10dp"/>
+                            <Button
+                                android:id="@+id/button6"
+                                android:layout_width="110dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/junge"
+                                android:text="@string/addtocart"
+                                android:background="@drawable/add_to_cart_button" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <!-- ROW 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:padding="8dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flower7"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="50"
+                    app:cardCornerRadius="7dp">
+                    <RelativeLayout
+                        android:layout_width="185dp"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/elevenpink" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#FDE9EC"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/junge"
+                                android:text="11 Pink Bouquet"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="10dp"/>
+                            <Button
+                                android:id="@+id/button7"
+                                android:layout_width="110dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/junge"
+                                android:text="@string/addtocart"
+                                android:background="@drawable/add_to_cart_button" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flower8"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="50"
+                    app:cardCornerRadius="7dp">
+                    <RelativeLayout
+                        android:layout_width="185dp"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/carnation" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#FDE9EC"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/junge"
+                                android:text="Carnation"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="10dp"/>
+                            <Button
+                                android:id="@+id/button8"
+                                android:layout_width="110dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/junge"
+                                android:text="@string/addtocart"
+                                android:background="@drawable/add_to_cart_button" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <!-- ROW 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:padding="8dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/asteroiddestroyer"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="50"
+                    app:cardCornerRadius="7dp">
+                    <RelativeLayout
+                        android:layout_width="185dp"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/asteroid_destroyer" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#FDE9EC"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/junge"
+                                android:text="Asteroid Destroyer"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="10dp"/>
+                            <Button
+                                android:id="@+id/button9"
+                                android:layout_width="110dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/junge"
+                                android:text="@string/addtocart"
+                                android:background="@drawable/add_to_cart_button" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flower10"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="50"
+                    app:cardCornerRadius="7dp">
+                    <RelativeLayout
+                        android:layout_width="185dp"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/flower_sample" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#FDE9EC"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/junge"
+                                android:text="Flower 1"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="10dp"/>
+                            <Button
+                                android:id="@+id/button10"
+                                android:layout_width="110dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/junge"
+                                android:text="@string/addtocart"
+                                android:background="@drawable/add_to_cart_button" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+    <!-- BOTTOM NAVIGATION BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FBDADE"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/cart_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="150dp"
+            android:scaleType="fitCenter"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/cart"
+            app:srcCompat="@drawable/shopping_cart" />
+
+        <ImageButton
+            android:id="@+id/profile_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitCenter"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/profile"
+            app:srcCompat="@drawable/person_icon" />
+
+    </LinearLayout>
+
+</RelativeLayout>

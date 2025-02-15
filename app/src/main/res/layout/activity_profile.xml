@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Main">
+
+    <!--TOP NAVIGATION BAR-->
+    <LinearLayout
+        android:id="@+id/top_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_nav_profile_border"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:weightSum="4"
+        >
+
+        <!-- Profile Picture Icon-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/profile_circle_icon" />
+
+        <!-- Container for Email & Address-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/emailtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/albertsans"
+                android:text="cucumelon123@gmail.com"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Address (Placed Under Email) -->
+            <TextView
+                android:id="@+id/addresstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/albertsans"
+                android:text="Mangaldan, Pangasinan"
+                android:textSize="13sp"
+                android:textColor="#666"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!--Settings Icon-->
+        <ImageView
+            android:id="@+id/small_profile_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/settings_icon" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_navigation_bar"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Order History Text -->
+            <TextView
+                android:id="@+id/orderhistorytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order History"
+                android:fontFamily="@font/albertsans"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="start"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- history 1 -->
+            <View
+                android:id="@+id/history1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:background="@drawable/cartbackground"/>
+            <!-- history 2 -->
+            <View
+                android:id="@+id/history2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:background="@drawable/cartbackground"/>
+            <!-- history 3 -->
+            <View
+                android:id="@+id/history3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:background="@drawable/cartbackground"/>
+            <!-- history 4 -->
+            <View
+                android:id="@+id/history4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:background="@drawable/cartbackground"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BOTTOM NAVIGATION BAR / TOTAL -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FBDADE"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/cart_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="150dp"
+            android:scaleType="fitCenter"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/cart"
+            app:srcCompat="@drawable/shopping_cart" />
+
+        <ImageButton
+            android:id="@+id/profile_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitCenter"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/profile"
+            app:srcCompat="@drawable/person_icon" />
+
+    </LinearLayout>
+</RelativeLayout>

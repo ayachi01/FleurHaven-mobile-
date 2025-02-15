@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="241dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/kaisei_harunoumi_bold"
+        android:text="Fleur Haven"
+        android:textColor="#573F53"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="256dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/kaisei_harunoumi_bold"
+        android:text="Reserve the beauty, Share the bloom"
+        android:textColor="#573F53"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="36dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textSize="14sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_border"
+        android:elevation="5dp"
+        android:hint="Email"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="64dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_border"
+        android:elevation="5dp"
+        android:hint="Password"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/forgotPasswordText"
+        android:layout_width="113dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginTop="15dp"
+        android:text="Forgot Password"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/submit_shape"
+        android:textSize="18dp"
+        android:text="LOG IN"
+        android:textColor="#000000"
+        android:elevation="10dp" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="15dp"
+            android:text="Don’t have an account yet?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/signupText"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Sign up"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
