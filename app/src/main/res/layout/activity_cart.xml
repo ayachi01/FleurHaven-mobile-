@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/albertsans"
             android:text="@string/tvcart"
-            android:textSize="20sp"
+            android:textSize="25sp"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="140dp"
             tools:layout_editor_absoluteY="63dp" />
@@ -150,12 +150,12 @@
             />
 
     </LinearLayout>
-
+    <!-- BOTTOM NAVIGATION BAR / TOTAL -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#FBF2F2"
+        android:background="#FBDADE"
         android:elevation="10dp"
         android:gravity="center"
         android:orientation="horizontal"

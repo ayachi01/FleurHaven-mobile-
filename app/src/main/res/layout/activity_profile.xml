@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Main">
+
+    <LinearLayout
+        android:id="@+id/top_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#FBF2F2"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="7dp"
+            android:src="@drawable/profile_circle_icon"/>
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="example@gmail.com"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toEndOf="@id/profile_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="10dp"/>
+
+        <!-- Address (Location) -->
+        <TextView
+            android:id="@+id/profile_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sta. Barbara, Pangasinan"
+            android:textColor="#666"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/profile_email"
+            app:layout_constraintTop_toBottomOf="@id/profile_email" />
+
+
+    </LinearLayout>
+
+    <!-- BOTTOM NAVIGATION BAR / TOTAL -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FBDADE"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/cart_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="150dp"
+            android:scaleType="fitCenter"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/cart"
+            app:srcCompat="@drawable/shopping_cart" />
+
+        <ImageButton
+            android:id="@+id/profile_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitCenter"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/profile"
+            app:srcCompat="@drawable/person_icon" />
+
+    </LinearLayout>
+</RelativeLayout>
