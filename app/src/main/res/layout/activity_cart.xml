@@ -141,8 +141,21 @@
             android:fontFamily="@font/albertsans"
             android:text="@string/tvtotal"
             android:textSize="20sp"
-            android:layout_margin="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
             android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="634dp" />
+
+        <TextView
+            android:id="@+id/tv_ammount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/albertsans"
+            android:text="₱ 1500"
+            android:textSize="20sp"
+            android:layout_margin="12dp"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="20dp"
             tools:layout_editor_absoluteY="634dp" />
@@ -155,7 +168,7 @@
             android:background="@color/white"
             android:backgroundTint="#EEEEEE"
             android:fontFamily="@font/albertsans"
-            android:layout_marginLeft="210dp"
+            android:layout_marginLeft="140dp"
             android:layout_marginTop="10dp"
             android:text="@string/check_out"
             android:textSize="13sp"
