@@ -62,6 +62,7 @@
             android:textSize="18sp"
             android:layout_margin="15dp"
             tools:ignore="MissingConstraints"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="121dp" />
 
