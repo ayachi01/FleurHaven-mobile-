@@ -290,22 +290,6 @@
 
             </LinearLayout>
 
-            <!-- PINK THEMED BOUQUETS -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                >
-                <TextView
-                    android:id="@+id/pinkthemed"
-                    android:layout_width="match_parent"
-                    android:layout_height="27dp"
-                    android:text="@string/pinkthemed"
-                    android:fontFamily="@font/albertsans"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-
             <!-- ROW 3 -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -499,21 +483,7 @@
 
             </LinearLayout>
 
-            <!-- PURPLE THEMED BOUQUETS -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                >
-                <TextView
-                    android:id="@+id/purplethemed"
-                    android:layout_width="match_parent"
-                    android:layout_height="27dp"
-                    android:text="@string/purplethemed"
-                    android:fontFamily="@font/albertsans"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black" />
-            </LinearLayout>
+
             <!-- ROW 5 -->
             <LinearLayout
                 android:layout_width="match_parent"
