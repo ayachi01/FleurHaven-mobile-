@@ -5,7 +5,7 @@
     android:id="@+id/cart1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Main">
+    tools:context=".Activity_Cart">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -161,7 +161,7 @@
             tools:layout_editor_absoluteY="634dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/checkoutBtn"
             android:layout_width="110dp"
             android:layout_height="31dp"
             android:layout_marginRight="5dp"

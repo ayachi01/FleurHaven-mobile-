@@ -31,6 +31,12 @@ class Activity_Signup : AppCompatActivity() {
                 emailEditText.error = "Email is required"
                 return@setOnClickListener
             }
+            // check email format (@gmail.com)
+            if (!email.endsWith("@gmail.com")) {
+                Toast.makeText(this, "Incorrect Email Format", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             if (username.isEmpty()) {
                 usernameEditText.error = "Username is required"
                 return@setOnClickListener

@@ -10,18 +10,14 @@ import android.widget.ImageButton
 import com.example.fleurhaven.R
 
 
-class Activity_Cart : AppCompatActivity() {
+class Activity_Checkout : AppCompatActivity() {
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cart)
-
+        setContentView(R.layout.activity_checkout)
 
         val cartIcon = findViewById<ImageButton>(R.id.cart_icon)
         val profileIcon = findViewById<ImageButton>(R.id.profile_icon)
-        val checkout = findViewById<Button>(R.id.checkoutBtn)
-
 
 
         cartIcon.setOnClickListener {
@@ -34,10 +30,6 @@ class Activity_Cart : AppCompatActivity() {
             startActivity(intent)
         }
 
-        checkout.setOnClickListener {
-            val intent = Intent(this, Activity_Checkout::class.java)
-            startActivity(intent)
-        }
 
 
     }
