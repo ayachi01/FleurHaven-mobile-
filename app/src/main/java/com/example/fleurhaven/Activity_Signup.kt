@@ -1,3 +1,4 @@
+
 package com.example.fleurhaven
 
 import android.content.Intent
@@ -55,7 +56,7 @@ class Activity_Signup : AppCompatActivity() {
                 errorMessages.add("Passwords do not match")
             }
 
-            // If there are any error messages, show them
+            // If there are any error messages
             if (errorMessages.isNotEmpty()) {
                 Toast.makeText(this, errorMessages.joinToString("\n"), Toast.LENGTH_LONG).show()
                 return@setOnClickListener
@@ -64,7 +65,14 @@ class Activity_Signup : AppCompatActivity() {
             // Proceed with signup logic (e.g., saving to database)
             Toast.makeText(this, "Signup successful", Toast.LENGTH_SHORT).show()
 
-            // Redirect to Login8
+            // store email and password in shared preferences
+            val sharedPref = getSharedPreferences("user_data", MODE_PRIVATE)
+            val editor = sharedPref.edit()
+            editor.putString("email", email)
+            editor.putString("password", password)
+            editor.apply()
+
+            // Redirect to Login
             val intent = Intent(this, Activity_Login::class.java)
             startActivity(intent)
             finish()
