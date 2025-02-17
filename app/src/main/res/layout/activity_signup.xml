@@ -91,6 +91,7 @@
         android:background="@drawable/text_border"
         android:elevation="5dp"
         android:hint="Password"
+        android:inputType="textPassword"
         android:padding="10dp" />
 
     <TextView
@@ -111,6 +112,7 @@
         android:background="@drawable/text_border"
         android:elevation="5dp"
         android:hint="Password Confirmation"
+        android:inputType="textPassword"
         android:padding="10dp" />
 
 
