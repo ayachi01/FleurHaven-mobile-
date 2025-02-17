@@ -14,14 +14,12 @@ class Activity_Signup : AppCompatActivity() {
 
         // Get references to UI elements
         val emailEditText = findViewById<EditText>(R.id.emailEditText)
-        val usernameEditText = findViewById<EditText>(R.id.usernEditText)
         val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
         val passwordConfEditText = findViewById<EditText>(R.id.passwconfEditText)
         val submitButton = findViewById<Button>(R.id.submitBtn)
 
         submitButton.setOnClickListener {
             val email = emailEditText.text.toString().trim()
-            val username = usernameEditText.text.toString().trim()
             val password = passwordEditText.text.toString().trim()
             val passwordConf = passwordConfEditText.text.toString().trim()
 
@@ -39,10 +37,6 @@ class Activity_Signup : AppCompatActivity() {
                 errorMessages.add("Invalid email address")
             }
 
-            if (username.isEmpty()) {
-                usernameEditText.error = "Username is required"
-                errorMessages.add("Username is required")
-            }
             if (password.isEmpty()) {
                 passwordEditText.error = "Password is required"
                 errorMessages.add("Password is required")
